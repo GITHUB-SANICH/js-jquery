@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+/* ОБЩИЕ КЛАССЫ */
+*{
+	margin: 0;
+	padding: 0;
+	/* стиль обводки полей */
+	outline: none;
+}
+
+body{
+	/* размер шрифта */
+	font-size: 14px;
+	/* шрифт */
+	font-family: 'Montserrat', sans-serif;	
+	/* цвет текста */
+	color: #333;
+	/* жирность текста  */
+	font-weight: 400;
+	/* задний фон страницы */
+	background: #fff;
+}
+
+img{
+	/* максимальная ширина по родительскому элементу */
+	max-width: 100%;
+}
+
+a{
+	color: #757575;
+	text-decoration: none;
+	/* Плавное срабатывание перехода ко всем свойствам (all), в течении времени (600ms) функцией (ease)*/
+	transition: all 600ms ease;
+}
+
+a:hover{
+	color: #ff5644;
+	transition: all 600ms ease;
+}
+
+/* класс прописывающий отсупы хедера побокам, и выравнивающий контент по одной линии */
+.container{
+	padding-left: 15%;
+	padding-right: 15%;
+	width: 70%;
+}
+
+@media(max-width: 900px){
+	.container{
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+	}
+}
+
+/* КЛАССЫ ПЕРВЙО СЕКЦИИ ХЕДЕРА*/
+header > .top-menu{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: flex;
+	/* свойство, раздвигающее контент в противоположные стороны блока */
+	justify-content: space-between;
+	background: #333;
+	color: #fff;
+	/* свойство верхнего регистра текста */
+	text-transform: uppercase;
+}
+
+/* стиль для всех ссылок внутри меню хедера */
+header > .top-menu > .nav a{
+	color: #fff;
+	margin-right: 10px;
+}
+
+header > .top-menu > .nav a:hover{
+	color: #757575;
+}
+
+/* стиль добавляет информацию после каждого элемента, но кроме последнего */
+header > .top-menu > .nav a:not(:last-of-type)::after{
+	content: "|";
+	margin-left: 10px;
+	color:#fff;
+}
+
+/* стиль, задающий поворот иконки (с текущей иокнкой не требуется)*/
+header > .top-menu > .tel > i{
+	 /*свойство поворота иконки на 90 градусов */
+	/*transform: rotate(90deg);*/
+	margin-right: 10px;
+}
+
+/* КЛАССЫ ВТОРОЙ СЕКЦИИ ХЕДЕРА */
+/* стиль блока лого */
+header > .middle {
+	margin: 30px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > .middle > .heder-menu > .link-head {
+	margin: 30px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* стиль картинки лого */
+header > .middle > .logo img{
+	width: 150px;
+	/* текст, находящийся рядом с картинкой находился с ней в одном ряду (обтикал слева) */
+	float: left;
+	margin-right: 20px;
+}
+
+/* стиль текста лого */
+header > .middle > .logo span{
+	float: left;
+	font-size: 30px;
+	/* жирность шрифта, в подключенном шрифте */
+	font-weight: 700;
+	display: block;
+	width: 300px;
+	margin-top: 10px;
+}
+
+/* стиль для кнопок */
+.btn{
+	width: 180px;
+	height: 40px;
+	background: #333;
+	border-radius: 5px;
+	border: 0;
+	font-size: 14px;
+	margin-left: 10px;
+	color: #fff;
+	/* формат курсора при навдении на кнопку */
+	cursor: pointer;
+	transition: all 600ms ease;
+}
+
+
+/* стиль для кнопки авторизации */
+header .link-head{
+	width: 100px;
+	font-size: #fafafa;
+}
+
+/* стиль кнопки корзины */
+header .btn.basket{
+	/* такой формат ширины кнопки позволти передвинуть остальыне кнопки на вторую строку */
+	width: 95%;
+	display: block;
+	background: #fff;
+	color: #333;
+	margin-bottom: 10px;
+	border: 1px solid #333;
+}
+
+/* Стили кнопки авторизации */
+header .btn.dashboard{
+	width: 200px;
+	background: #ff5644;
+}
+
+/* стиль кнопок при наведении */
+.btn:hover{
+	/* время активации эффекта */
+	transition: all 600ms ease;
+	/* эффект при наведении - увеличивающий кнопку и поднимающий вверх*/
+	transform: scale(1.05) translateY(-3px);
+	/* тень для кнопки */
+	-webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+}
+
+/* КЛАССЫ ТРЕТЬЕЙ СЕКЦИИ ХЕДЕРА */
+/* стили для списка */
+header .menu > ul {
+	background: #fafafa;
+	border: 1px solid silver;
+	border-radius: 5px;
+	padding: 10px 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* стили для каждого отдельного элемента списка */
+header .menu > ul > li{
+	width: 20%;
+	/* выравнивание текста по высоте */
+	text-align: center;
+	/* стиль, отключающий отображение точек перед элементами списка */
+	list-style: none;
+	/* выстраивания всех элементов в одну линию */
+	display: inline-block;
+}
+
+/* стили для ссылок списка */
+header .menu > ul > li > a{color: #333;}
+header .menu > ul > li > a:hover{color: #ff5644;}
+
+.container > .heder-menu > a {
+	margin-left: 15px;
+	font-size: 1.2rem;
+	color: #757575;
+	text-decoration: none;
+	/* Плавное срабатывание перехода ко всем свойствам (all), в течении времени (600ms) функцией (ease)*/
+	transition: all 600ms ease;
+}
+
+.container > .heder-menu > a:hover {
+	font-size: 1.25rem;
+	color: #ff5644;
+}
+/* СТИЛИ ОСНОВНОЙ ЧАСТИ */
+/* стили главного блока содержания */
+.main{
+	margin-top: 50px;
+}
+
+.main > .products{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/* КЛАССЫ ФОРМЫ АВТОРИЗАЦИИ */
+.main > .container > .form-auth, .main > .container > .list_links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-auth > h1{
+	text-align: center;
+	font-size: 6rem;
+	margin: 20px 0px;
+}
+
+.form-auth > h2{
+	font-size: 1.3rem;
+	margin: 20px 0px;
+}
+
+.list_links > h2{
+	text-align: center;
+}
+
+.form-auth, .list_links{
+	width: 550px;
+	margin: 70px auto;
+}
+
+.main > .products > .product{
+	width: 30%;
+	margin-right: 5%;
+	/* 480px */
+	height: 600px; 
+	background: #eaeaea;
+	/* скругление верхних углов */
+	border-radius: 5px 5px 0 0;
+	margin-top: 50px;
+	border: 1px solid silver;
+	/* свойство, запрещающее учитывать border в ширине блока */
+	box-sizing: border-box;
+}
+
+/* условие, прописывающее нулевой отступ справа, для каждого третьего элемента */
+.main > .products > .product:nth-child(3n){margin-right: 0;}
+
+/* стили для изображения товара */
+.main > .products > .product .image {
+	width: 100%;
+	/* 200px */
+	height: 300px;
+	/* свойство, скрывающее значение контента (изображения), не вмещающегося в рапки родительского блока (в данном случаи стиль работает на изображения выше 200px по высоте) */
+	overflow: hidden;
+}
+
+/* стили для картинки товара */
+.main > .products > .product > .image img {
+	/* для картинки дополнительно указывается скругление краев, так как ... и да это не работает */
+
+	border-radius: 5px 5px 0 0;
+	transition: all 600ms ease;
+}
+
+.main > .products > .product > .image img:hover {
+	/* для картинки дополнительно указывается скругление краев, так как  */
+	transform: scale(1.15);
+}
+
+/* стили для текта блока с товаром */
+.main > .products > .product  h3,
+.main > .products > .product p {
+	margin: 20px 5%;
+	width: 90%;
+	font-size: 22px;
+	color: #515b5b;
+}
+
+/* размер шрифта для описания товара */
+.main > .products > .product p{
+	font-size: 16px;
+}
+
+/* стили для кнопки "дитальнее" */
+.main > .products > .product .btn{
+	background: #ff5644;
+}
+
+/* пагинатор */
+.main > .products > .pagination{
+	display: flex;
+	justify-content: start;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.main > .products > .pagination > .page_btn{
+	display: inline-block;
+	background: #333;
+	font-size: 14px;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	margin-left: 5px;
+	cursor: pointer;
+	transition: all 600ms ease;
+}	
+
+.main > .products > .pagination > .page_btn:hover{
+	display: inline-block;
+	background: #ff5644;
+		font-size: 14px;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		line-height: 35px;
+		text-align: center;
+		border-radius: 50%;
+		margin-right: 10px;
+		cursor: pointer;
+		transition: all 600ms ease;
+	}
+
+	/* стиль блока с ссылками */
+	.shortLinkClass{
+		background: #d3d3d3;
+		border-radius: 5px;
+		padding: 15px;
+		margin-bottom: 15px;
+	}
+
+	.shortLinkClass > p{
+		margin: 5px 0px;
+	}
+	
+
+	.list_links > h2{
+		font-size: 2rem;
+		margin: 15px 0px;
+	}
+
+	.list_links .btn{
+		margin-left: 0px;
+		margin-top: 15px;
+		background: #241d1d;
+	}
+
+	#errorMessage_del, #successMessage_del{
+		display: none;
+		font-size: 1.20rem;
+		color: #ff5644;
+	}
+
+/* СТИЛИ ФУТЕРА */
+footer{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #333;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/* стили футера */
+footer > .social > i {
+	/* придание списку выстраивания в линию, но со свойствами блока */
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	background: silver;
+	margin-left: 5px;
+	cursor: pointer;
+	color: #333;
+	transition: all 600ms ease;
+}
+
+footer > .social > i:hover{
+	transition: all 600ms ease;
+	transform: translateY(-3px);
+} 

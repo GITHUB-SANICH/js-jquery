@@ -1,0 +1,19 @@
+/* класс для блока в КП */
+.user-info{
+	margin: 10px 0;
+	border: 1px solid silver;
+	padding: 20px 3%;
+	width: 94%;
+}
+
+/* класс для  кнопки в КП*/
+.user-info .btn{
+	margin-left: 0;
+	margin-top: 20px;
+}
+
+/* класс поля, принимающего файлы */
+.addFile{
+	height: 100%;
+	margin-left: 20px;
+}

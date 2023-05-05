@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="339c130d-9f3c-4e5f-a03b-e4fe44a4bf6b" name="Kurs_ItProger-back_end" url="http://localhost:3306/">
+        <fileTransfer mountedRoot="H:\SERVAK\OPEN_SERVER_pgu\OSPanel\domains\Kurs_ItProger-back_end\htdocs" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,43 @@
+/* СТИЛИ ДЛЯ ФОРМЫ */
+/* форма находится на  "\app\views\contact\index.php" => "/contact"*/
+.form-control{
+	/* ширина формы */
+	width: 500px;	
+}
+
+.form-control input,
+.form-control textarea{
+	/* ширина родительского боъекта */
+	width: 100%;
+	background: 1px solid silver;
+	border-radius: 5px;
+	padding: 15px 20px;
+	margin-top: 15px;
+	font-size: 14px;
+	color: #333;
+}
+
+.form-control textarea{
+	height: 200px;
+	/* запрет на растягивание поля с текстом */
+	resize: none;
+}
+
+.form-control .btn{
+	margin-left: 0px;
+	margin-top: 15px;
+	background: #ff5644;
+}
+
+/* сообщение об ошибке */
+.form-control .error{
+	color: #ff5644;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+/* форма добавления картинки */
+.formPushImg{
+	display: flex;
+	justify-content: start;
+}
