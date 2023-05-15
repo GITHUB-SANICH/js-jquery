@@ -1,0 +1,43 @@
+body{
+	height: 1350px;
+}
+
+.mainDiv {
+	position: relative;
+}
+
+.inputСlass {
+	padding: 20px 15px;
+	background: #fcfcfc;
+	border-radius: 5px;
+	border: 1px solid silver;
+	outline: none; 
+	display: block;
+	margin-bottom: 20px;
+	width: 300px;
+}  
+
+.hint {
+	position: absolute;
+	display: none;
+	background: #fcfcfc;
+	border-radius: 10px;
+	border: 2px solid silver;
+	padding: 10px;
+}
+
+#shar{
+	left: 150px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	width: 80px;
+	height: 80px;
+	background: #a51b1b;
+	border-radius: 50%;
+	border: 2px solid silver;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.15s linear; /*аналог: ease*/
+	font-weight: bold;
+}

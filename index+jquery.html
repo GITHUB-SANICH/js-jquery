@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style+jQery.css">
+	<!-- CSS для корусели -->
+	<link rel="stylesheet" href="css/slick.css">
+		<script src="https://use.fontawesome.com/c3c00ad171.js"></script>
+		<title>jQuery-landing</title>
+</head>
+<body>
+	<header>
+		<span class="logo">Washoo</span>
+			<div class="nav">
+				<a href="#">Главная</a>
+				<a href="#">Про компанию</a>
+				<a href="#">Услуги</a>
+			</div>
+		<span class="menu" id="show-menu">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</span>
+	</header>
+
+<!-- Меню -->
+<div id="hidden-menu">
+	<span class="close">
+		<i class="fa fa-times" aria-hidden="true"></i>
+	</span>
+	<h2>Меню</h2>
+	<ul>
+		<li><a href="#">Главная</a></li>
+		<li><a href="#">Про компанию</a></li>
+		<li><a href="#">Услуги</a></li>
+	</ul>
+</div>
+<!-- Секция с картинкой -->
+<section class="full-page">
+	<h1>Washoo - удобный сервис для всех и каждого</h1>
+	<h3>Просто слова для фона</h3>
+	<button>Узнай больше <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+</section>
+
+<!-- Картинки иконки -->
+<section class="features">
+	<div>
+		<img src="img/jq-icon-1.png" alt="">
+		<h4>Быстрый</h4>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod.</p>
+	</div>
+	<div>
+		<img src="img/jq-icon-2.png" alt="">
+		<h4>Качественый</h4>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod.</p>
+	</div>
+	<div>
+		<img src="img/jq-icon-3.png" alt="">
+		<h4>Легкий</h4>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quod.</p>
+	</div>
+</section>
+
+<!-- Секция с формой для полписки на рассылку -->
+<section class="bg-fixed">
+	<h3>Форма подписки</h3>
+	<input type="email" placeholder="Ваша почта">
+	<button>Подписаться <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+</section>
+
+<!-- Корусель -->
+<section class="gallery">
+	<h2>Немного фотографий</h2>
+	<div id="slider">
+		<div><img src="/img/jq-1.jpg" alt=""></div>
+		<div><img src="/img/jq-2.jpg" alt=""></div>
+		<div><img src="/img/jq-5.jpg" alt=""></div>
+		<div><img src="/img/jq-4.jpg" alt=""></div>
+	</div>
+</section>
+
+<!-- Подвал -->
+<footer>
+	<div class="up-btn">
+		<i class="fa fa-arrow-up" aria-hidden="true"></i>
+	</div>
+	<p>Все права защищены &copy;</p>
+	<div class="social">
+		<div><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+		<div><i class="fa fa-facebook" aria-hidden="true"></i></div>
+		<div><i class="fa fa-twitter" aria-hidden="true"></i></div>
+	</div>
+</footer>
+
+<!--<hr>
+<hr>
+<p><b>#3.3 - Селекторы выбора объектов</b></p>
+<hr><br>
+<div id="block">NO empty</div>
+<div style="border: 1px solid red; padding: 10px;"></div>
+<p class="txt">1 - абзац</p>
+<p class="txt">2 - абзац</p>
+<span class="txt">3 - спан</span>
+<span class="span">4 - спан</span>
+
+<hr>
+<hr>
+<p><b>#3.4 - Встроенные функции</b></p>
+<hr><br>
+
+<div class="class-1">Первый класс</div>
+<div class="class-2">Второй класс</div>
+<div class="class-3">Третий класс</div>
+<div class="class-4">Чертвертый класс</div>
+
+<hr>
+<hr>
+<p><b>#3.5 - Обработчик событий</b></p>
+<hr><br>-->
+
+<!-- Подключение к jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- Подключенеи файла с кодом -->
+<!--  JS для корусели -->
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jQuery.js"></script>
+</body>
+</html>

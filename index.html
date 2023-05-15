@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>JavaScript урок</title>
+</head>
+<body>
+	<!-- блок с Id -->
+	<div  id="tester_id" class="som">
+		<p class="txt">1 Абзац дива с ID</p>
+		<p class="txt">2 Абзац дива с ID</p>
+		<p class="txt">3 Абзац дива с ID</p>
+		<p class="txt">4 Абзац дива с ID</p>
+		<span>Дочерних спан</span>
+	</div>
+	<!-- DOM -->
+	<!-- Имя поля -->
+	<!-- Вывод: 1) document.querySelectorAll('input');, 2) nameId.getElementsByTagName('input')[0]; 3) document.getElementsByName('nameInput'); -->
+		<input type="text" name="nameInput" class="som" value="testNameInput" size="45">
+	<!-- Список элементов с селекторами -->
+		<!-- Вывод: 1) document.querySelectorAll('#id'); 2) document.getElementById('id');-->
+			<div id="id"></div>
+		<!-- Вывод: 1) document.querySelectorAll('ul.spisok > li'); 2) document.ul.childNodes; -->
+			<ul class="spisok">
+				<li class="li-class-test"><span class="span-class-test" id="span-id-test">1-й, span-test</span></li>
+				<li class="li-class-test"><span class="span-class-test" id="span-id-test"></span>2-й</li>
+				<li>3-й</li>
+			</ul>
+		<!-- Вывод: 1) document.querySelectorAll('.class'); 2) document.getElementsByClassName('class');-->
+			<div class="class"></div>
+			<hr>
+			<hr>
+		<!-- События -->
+		<ul>
+			<li><a href="#" ondblclick="clickForLink()" class="linkClicker">1. ondblclick: Ссылка для двойного нажатия</a></li>
+			<li><p onclick="clickForAbzac('p.abzacClickerRed')" class="abzacClickerRed">2. onclick: Абзац под красный цвет</p></li>
+			<li><a href="#" ondragend="linkDragging()" class="dragging">3. ondragend: Ссылка для перетаскивания</a></li>
+			<li>4. onfocus: <input type="text" onfocus="focusEvent('input.inputOnfocus')" onblur="notFocusEvent('input.inputOnfocus')" class="inputOnfocus"></li>
+			<li>5. onmouseover: <input type="text" onmouseover="focusEvent('input.inputOnMouseOver')" onmouseout="notFocusEvent('input.inputOnMouseOver')" class="inputOnMouseOver"></li>
+		</ul>
+		<hr>
+		<hr>
+		<!-- Задание по textarea -->
+		<label for="textarea_scroll">Мини задание (рузельтат в консоли): <br><textarea name="" id="textarea_scroll" cols="30" rows="10"></textarea></label>
+
+		<!-- EVENT LISTENER -->
+		<hr>
+		<hr>
+		<div class="bloker">
+			Доброго дня! Наведи курсор сюда.
+		</div>
+
+		<hr>
+		<hr>
+		<textarea name=""  class="full-text" id="" cols="30" rows="10">
+			Введите текст для вывода клавишь в консоль. 
+		</textarea>
+		<hr>
+		<hr>
+		<p>Lorem ipsum dolor sit amet <b class="bold-text">... click heare ...</b>. Ex possimus eos perspiciatis adipisci incidunt ipsam cupiditate a temporibus dolorem quos.</p>
+		<p>Lorem ipsum dolor sit amet <b class="bold-text">... click heare ...</b>. Ex possimus eos perspiciatis adipisci incidunt ipsam cupiditate a temporibus dolorem quos.</p>
+		<p>Lorem ipsum dolor sit amet <b class="bold-text">... click heare ...</b>. Ex possimus eos perspiciatis adipisci incidunt ipsam cupiditate a temporibus dolorem quos.</p>
+		<hr>
+		<hr>
+
+		<div class="mainDiv">
+			<input type="text" class="inputСlass" placeholder="Впишите текст в поле">
+			<div class="hint">Подсказка при наведении</div>
+		</div>
+
+		<hr>
+		<hr>
+		<div id="shar">Шар</div>
+
+	<script src="js/vars.js"></script>
+	<!--<script src="js/js.js"></script>-->
+	<script src="js/html+js.js"></script>
+</body>
+</html>
