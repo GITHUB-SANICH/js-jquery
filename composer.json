@@ -1,6 +1,6 @@
 {
     "require": {
-        "phpmailer/phpmailer": "^6.6",
-        "erusev/parsedown": "^1.7"
+        "laravel/ui": "^4.1",
+        "php-open-source-saver/jwt-auth": "^2.1"
     }
 }
